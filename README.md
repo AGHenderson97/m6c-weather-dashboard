@@ -1,7 +1,5 @@
 # m6c-weather-dashboard
 
-Summary: Weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-
 User Story:
 AS A traveler
 I WANT to see the weather outlook for multiple cities

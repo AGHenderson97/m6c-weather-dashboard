@@ -71,3 +71,11 @@ function displayCurrentWeather(city) {
 function displayForecast(city) {
     // Construct the query URL
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + apiKey;
+
+     // Make the API request
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+    dataType: "json",
+    success: function(response) {
+     

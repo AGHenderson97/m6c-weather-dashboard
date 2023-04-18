@@ -33,3 +33,4 @@ function displayCurrentWeather(city) {
       // Display the UV index
       var lat = response.coord.lat;
       var lon = response.coord.lon;
+      var uvQueryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;

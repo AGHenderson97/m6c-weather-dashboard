@@ -42,4 +42,27 @@ function displayCurrentWeather(city) {
         success: function(uvResponse) {
           $("#current-uv").text(uvResponse.value);
 
-          
+          // Set the UV index background color based on its value
+          if (uvResponse.value < 3) {
+            $("#current-uv").css("background-color", "green");
+          }
+          else if (uvResponse.value < 6) {
+            $("#current-uv").css("background-color", "yellow");
+          }
+          else if (uvResponse.value < 8) {
+            $("#current-uv").css("background-color", "orange");
+          }
+          else if (uvResponse.value < 11) {
+            $("#current-uv").css("background-color", "red");
+          }
+          else {
+            $("#current-uv").css("background-color", "purple");
+          }
+        }
+      });
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      alert("Error: " + textStatus + " - " + errorThrown);
+    }
+  });
+}

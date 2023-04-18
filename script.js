@@ -16,3 +16,8 @@ function displayCurrentWeather(city) {
     success: function(response) {
       // Set the currentCity variable
       currentCity = response.name;
+
+      // Display the city name, date, and icon
+      $("#city-name").text(response.name);
+      $("#current-date").text(moment().format("MMM D, YYYY"));
+      $("#current-icon").attr("src", "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png");

@@ -75,7 +75,7 @@ function displayForecast(city) {
     dataType: "json",
     success: function(response) {
       // Display the forecast cards
-      for (var i = 0; i < response.list.length; i += 8) {
+      for (var i = 0; i <response.list.length; i += 8) {
         // Calculate the date, icon, temperature, and humidity for the forecast card
         var date = moment(response.list[i].dt_txt).format("MMM D, YYYY");
         var icon = "https

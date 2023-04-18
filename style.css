@@ -13,3 +13,34 @@ header {
     justify-content: space-between;
     padding: 10px;
   }
+
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  /* Search form styles */
+.search-form {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  
+  .search-input {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+  }
+  
+  .search-btn {
+    background-color: #fbd468;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  

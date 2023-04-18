@@ -21,3 +21,6 @@ function displayCurrentWeather(city) {
       $("#city-name").text(response.name);
       $("#current-date").text(moment().format("MMM D, YYYY"));
       $("#current-icon").attr("src", "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
+
+       // Convert the temperature from Kelvin to Fahrenheit
+       var tempF = (response.main.temp - 273.15) * 1.8 + 32;

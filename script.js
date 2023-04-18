@@ -29,3 +29,7 @@ function displayCurrentWeather(city) {
       $("#current-temp").text(tempF.toFixed(1) + " °F");
       $("#current-humidity").text(response.main.humidity + "%");
       $("#current-wind").text(response.wind.speed + " MPH");
+
+      // Display the UV index
+      var lat = response.coord.lat;
+      var lon = response.coord.lon;

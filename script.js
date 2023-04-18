@@ -24,3 +24,8 @@ function displayCurrentWeather(city) {
 
        // Convert the temperature from Kelvin to Fahrenheit
        var tempF = (response.main.temp - 273.15) * 1.8 + 32;
+
+        // Display the temperature, humidity, and wind speed
+      $("#current-temp").text(tempF.toFixed(1) + " °F");
+      $("#current-humidity").text(response.main.humidity + "%");
+      $("#current-wind").text(response.wind.speed + " MPH");

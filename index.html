@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-lIgG/SSjOa1/P+Fuspmntv0fVOfpx+yQcNjdcxL8wBo="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <h1>Weather Dashboard</h1>
+        </div>
+        <div class="col-md-6">
+          <form id="city-form">
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="city-input"
+                  placeholder="Enter a city"
+                />
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">
+                  <i class="fas fa-search"></i> Search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div id="current-weather"></div>
+        </div>
+        <div class="col-md-6">
+          <div id="forecast"></div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div id="search-history"></div>
+        </div>
+      </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-J6qa4849blEBoxI6J0sUDIiMbYsGONL15M1a5f/0Xcb+JZ3/JmzygmxwUoW8Q6T2"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    integrity="sha256-Kv9XzJ+V/cI2mZ2ijNsaaJmrg+jF7dBJzHgF/7Vv5UU="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -78,4 +78,5 @@ function displayForecast(city) {
     method: "GET",
     dataType: "json",
     success: function(response) {
-     
+      // Display the forecast cards
+      for (var i = 0; i < response.list.length; i += 8) {

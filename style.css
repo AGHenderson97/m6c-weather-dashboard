@@ -44,3 +44,60 @@ header {
     cursor: pointer;
   }
   
+  /* Search history styles */
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .history-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .history-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .history-item {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* Current weather styles */
+  .current-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .weather-icon {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .weather-icon img {
+    width: 100px;
+  }
+  
+  .weather-details {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .weather-details h2 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .weather-details p {
+    margin: 10px 0;
+    font-size: 18px;
+  }

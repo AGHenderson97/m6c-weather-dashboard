@@ -34,3 +34,12 @@ function displayCurrentWeather(city) {
       var lat = response.coord.lat;
       var lon = response.coord.lon;
       var uvQueryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;
+
+      $.ajax({
+        url: uvQueryURL,
+        method: "GET",
+        dataType: "json",
+        success: function(uvResponse) {
+          $("#current-uv").text(uvResponse.value);
+
+          

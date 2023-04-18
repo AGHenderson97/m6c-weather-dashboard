@@ -22,3 +22,5 @@ THEN I am again presented with current and future conditions for that city
 Deployed URL:
 https://aghenderson97.github.io/m6c-weather-dashboard/
 
+Screenshot:
+<img width="897" alt="Screenshot 2023-04-18 at 11 34 44 AM" src="https://user-images.githubusercontent.com/113946573/232829144-468cf425-8b51-424f-811f-795a7d28352d.png">
